@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  thread-count="4">
+
+	<listeners>
+		<listener class-name="com.xcel.qa.base.Listeners"></listener>
+		<listener class-name="com.xcel.qa.base.RetryListener"></listener>
+	</listeners>
+
+	<test name="Test">
+		<parameter name="userType" value="teacher"></parameter>
+		<classes>
+			
+			<class name="com.xcel.qa.testcases.AppLoginTest" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherDashboardTest" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherSubjectTest" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherStudentTest" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherExamTest" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherTimetable" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherMyWorksheet" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherMyAttendance" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherSalary" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherExtraCurricularTest" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherLibraryManagementTest" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherCertificateRequest" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherPTATest" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherOnlineClasses" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherAnalyticsTest" />
+			<class name="com.xcel.qa.testcases.teacher.TeacherActivityTest" />
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
